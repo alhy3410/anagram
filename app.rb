@@ -7,6 +7,6 @@ get ('/') do
 end
 
 get('/results') do
-  @anagram = params.fetch('anagram').anagram()
+  @anagram = params.fetch('originalword').anagram(params.fetch('sentence'))
   erb(:results)
 end
