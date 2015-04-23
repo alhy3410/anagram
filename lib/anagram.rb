@@ -1,6 +1,7 @@
 class String
   define_method(:anagram) do |words_to_check|
     first_word = self.split('')
+    words_to_check.gsub!(/[,]/, '').to_s
     second_word = words_to_check.split()
     results = []
     anagram = []
