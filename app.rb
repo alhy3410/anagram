@@ -2,7 +2,7 @@ require('sinatra')
 require('sinatra/reloader')
 require('./lib/anagram')
 
-get ('/') do
+get('/') do
   erb(:index)
 end
 
