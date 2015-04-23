@@ -1,6 +1,7 @@
 require('capybara/rspec')
 require('./app')
 Capybara.app = Sinatra::Application
+set(:show_exceptions, false)
 
 describe('user will put words into the sentence to check to see if it is an anagram of the original word', {:type => :feature}) do
   it('takes the original word and checks it against all words') do
